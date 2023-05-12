@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LB Games - Topics
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pageBackground">
+    <div class="pageContent">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="banner">
+              <strong>Open topics</strong>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="topicListBlock">
+              <ul>
+                <li class="overflowAuto" *ngFor="let topic of topics">
+                  <div class="topicTextBlock floatLeft topicText">
+                    {{ topic }}
+                  </div>
+                  <div class="topicButtonBlock floatLeft">
+                    <ion-button size="small" fill="clear" class="topicButton">
+                      <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                </li>
+              </ul> 
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="topicsButtonBlock">
+              <ion-button class="button" href="/home">
+                <ion-icon slot="end" name="home-outline"></ion-icon>
+                Home
+              </ion-button>    
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

@@ -23,6 +23,18 @@
   margin-bottom: 2em;
 }
 
+.topicListBlock {
+  margin-bottom: 2em;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.floatLeft {
+  float: left;
+}
+
 .nameInputBlock {
   margin-left: auto;
   margin-right: auto;
@@ -37,11 +49,28 @@
   margin-bottom: 1em;
 }
 
-/*
-.topicsButtonBlock {
-  
+.topicButtonBlock {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
-*/
+
+.topicButton {
+  margin: 0;
+
+}
+
+.overflowAuto {
+  overflow: auto;
+}
+
+.topicTextBlock {
+  padding-top: 0.25em;  
+}
+
+.topicText {
+  text-shadow: 0.1em 0.1em 2px #000000;
+}
 
 strong {
   font-size: 20px;
@@ -54,7 +83,7 @@ p {
   line-height: 22px;
 
   color: #eeeeee;
-
+  
   margin: 0;
 }
 

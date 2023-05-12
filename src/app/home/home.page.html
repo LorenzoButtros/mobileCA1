@@ -1,20 +1,61 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      LB Games - Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="pageBackground">
+    <div class="pageContent">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="banner">
+              <strong>Let's talk about board games!</strong>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="topicInputBlock">
+              <ion-item>
+                <ion-input label="" placeholder="Write your topic suggestion here."></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="nameInputBlock">
+              <ion-item>
+                <ion-input label="" placeholder="Your name here."></ion-input>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="sendButtonBlock">
+              <ion-button class="button" id="sendButton">
+                <ion-icon slot="end" name="send-outline"></ion-icon>
+                Send
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="topicsButtonBlock">
+              <ion-button class="button" href="/topics">
+                <ion-icon slot="end" name="chatbubbles-outline"></ion-icon>
+                Topics
+              </ion-button>    
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </div>
 </ion-content>
